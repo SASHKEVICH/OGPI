@@ -1,0 +1,69 @@
+#favourite {
+    background-color: black;
+    padding-bottom: 3%;
+}
+
+.favouriteHead {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.favouriteHead h2 {
+    margin-bottom: 5%;
+    padding-top: 5%;
+}
+
+.favouriteHead .description {
+    margin-left: 3%;
+}
+
+.favouriteHead .description p {
+    font-size: 16px;
+}
+
+.cellBlock {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10%;
+}
+
+.cell {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    width: 25%;
+}
+
+.cell::after {
+    content: '';
+    right: 0;
+    height: 25%;
+    position: absolute;
+    border: 1px solid #626262;
+    margin-top: 50%;
+}
+
+.cell p {
+    text-align: left;
+    font-family: 'GeometriaLight', sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+    margin: 2% 0;
+    margin-top: 4%;
+    color: #e6e6e6;
+}
+
+.cell img {
+    margin: 0 auto;
+}
+
+.cell h3 {
+    margin-top: 4%;
+    color: #E5E5E5;
+}
+
+.cell:last-child::after {
+    border: 0px solid #626262;
+}

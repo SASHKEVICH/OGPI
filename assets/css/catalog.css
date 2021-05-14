@@ -1,0 +1,68 @@
+#catalog {
+    background-color: black;
+}
+
+#catalog h2 {
+    font-size: 36px;
+    font-family: AGMelanieC, sans-serif;
+    margin-bottom: 5%;
+    padding-top: 5%;
+}
+
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.wineCard, .champagneCard, .beerCard, .drinksCard {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 40%;
+    padding: 5% 0 0 7%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+.wineCard {
+    background-image: url(../img/wineCard.png);
+}
+
+.champagneCard {
+    background-image: url(../img/champagneCard.png);
+}
+
+.beerCard {
+    background-image: url(../img/beerCard.png);
+}
+
+.drinksCard {
+    background-image: url(../img/drinksCard.png);
+}
+
+.wineCard img, .champagneCard img, .beerCard img, .drinksCard img {
+    margin: 4% 0;
+}
+
+.wineCard p, .champagneCard p, .beerCard p, .drinksCard p {
+    width: 80%;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    margin-bottom: 2%;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 25%;
+}
+
+.description p {
+    font-family: 'GeometriaMedium', sans-serif;
+    margin-right: 5%;
+}

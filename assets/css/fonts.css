@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "AGMelanieC";
+    src: url(../fonts/AGMelanieC.otf);
+}
+
+@font-face {
+    font-family: "GeometriaLight";
+    src: url(../fonts/Geometria-Light.woff);
+}
+
+@font-face {
+    font-family: "GeometriaMedium";
+    src: url(../fonts/Geometria-Medium.woff);
+}
+
+@font-face {
+    font-family: "GeometriaBold";
+    src: url(../fonts/Geometria-Bold.woff);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');

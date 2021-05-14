@@ -1,0 +1,39 @@
+footer {
+    background-color: black;
+}
+
+footer .landing {
+    display: flex;
+    flex-direction: row;
+}
+
+footer span {
+    color: #A9A9A9;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 400;
+}
+
+.leftBlock .rightBlock {
+    display: flex;
+    align-items: baseline;
+}
+
+.leftBlock {
+    margin-left: 1%;
+}
+
+.rightBlock {
+    margin-left: 57%;
+    width: 35%;
+}
+
+.rightBlock span {
+    border-right: 1px solid #999;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.rightBlock span:last-child {
+    border: none;
+}

@@ -1,0 +1,55 @@
+#contactUs {
+    background-color: black;
+}
+
+#contactUs .landing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contactBlock {
+    color: #cacaca;
+    margin-top: 5%;
+    width: 16%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactBlock p, .numBlock {
+    font-size: 14px;
+    margin: 5% 0 0 0;
+}
+
+.contactBlock p:first-of-type {
+    margin-top: 12%;
+}
+
+.contactBlock span {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.numBlock {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.contactBlock h1 {
+    color: #C4C4C4;
+    font-size: 25px;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12%;
+}
+
+.socialMedia img {
+    margin-right: 12%;
+}

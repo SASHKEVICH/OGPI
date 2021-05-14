@@ -1,0 +1,35 @@
+#pickUpWine {
+    background-image: url(../img/pickUpWine.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.pickUpBlock {
+    margin: 10% 0;
+    padding: 5% 0 3% 5%;
+    width: 50%;
+    background: rgba(144, 143, 143, 0.2);
+}
+
+.pickUpBlock h2 {
+    width: 85%;
+}
+
+.pickUpBlock p {
+    color: #cacaca;
+    margin-top: 4%;
+}
+
+.btn {
+    font-family: 'GeometriaMedium', sans-serif;
+    font-size: 0.9em;
+    margin-top: 6%;
+    background-color: #020202;
+    padding: 3% 0;
+    text-align: center;
+    width: 31%;
+    border-radius: 3px;
+}

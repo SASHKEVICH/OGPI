@@ -1,0 +1,87 @@
+.component {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.logoAndCity {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.logo {
+    filter: none;
+}
+
+.logoAndCity .city {
+    width: 35%;
+    display: inline-flex;
+    align-items: baseline;
+}
+
+.city img {
+    margin-right: 6%;
+}
+
+.component .city, .logoMenu {
+    font-family: 'GeometriaLight', sans-serif;
+}
+
+.logoMenu {
+    width: 70%;
+}
+
+.logoMenu span {
+    margin-left: 13%;
+}
+
+.headButtons {
+    width: 25%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.headButtons .cart, .search, .login {
+    margin-left: 25%;
+}
+
+.centralBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 17% auto 0 auto;
+    width: 30%;
+}
+
+.centralBlock .logo, .centralBlock .dots, .centralBlock p {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.centralBlock .logo h1 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 45px;
+}
+
+.centralBlock p {
+    font-family: 'GeometriaLight', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    color: #CACACA;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.centralBlock p span {
+    font-family: 'GeometriaMedium', sans-serif;
+}
+
+.arrow {
+    display: flex;
+    margin: 13% auto 0 auto;
+}

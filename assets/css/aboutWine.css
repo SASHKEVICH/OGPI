@@ -1,0 +1,62 @@
+#aboutWine {
+    background-color: black;
+    padding-top: 5%;
+}
+
+.aboutBlocks {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+.aboutBlock {
+    width: 30%;
+    margin-bottom: 7%;
+    margin-right: 3%;
+}
+
+.aboutBlock h4 {
+    margin-top: 3%;
+}
+
+.aboutBlock:first-of-type {
+    background-image: url(../img/receipes.png);
+    padding: 21% 0 3% 1%;
+}
+
+.aboutBlock span {
+    font-family: 'GeometriaBold', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.aboutBlock p {
+    font-size: 16px;
+    margin-top: 3%;
+}
+
+.aboutBlock:nth-child(2) {
+    background-image: url(../img/lifeStyle.png);
+    padding: 24% 0 3% 1%;
+}
+
+.aboutBlock:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.halfBlock {
+    height: 50%;
+    padding-top: 30%;
+    padding-left: 3%;
+}
+
+.halfBlock:first-child {
+    background-image: url(../img/advise.png);
+    padding-top: 29%;
+    margin-bottom: 5%;
+}
+
+.halfBlock:last-child {
+    background-image: url(../img/history.png);
+}
