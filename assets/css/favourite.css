@@ -67,3 +67,45 @@
 .cell:last-child::after {
     border: 0px solid #626262;
 }
+
+@media screen and (max-width: 700px) {
+    .cellBlock {
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+
+    .cell {
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .cell::after {
+        content: none;
+    }
+
+    .cell p, .cell h3 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .favouriteHead {
+        flex-direction: column;
+    }
+
+    .favouriteHead h2 {
+        font-size: 25px;
+    }
+
+    .favouriteHead .description p {
+        font-size: 13px;
+    }
+
+    .cell p {
+        font-size: 14px;
+    }
+
+    .cell h3 {
+        font-size: 20px;
+    }
+}

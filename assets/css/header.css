@@ -1,30 +1,32 @@
 .component {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: baseline;
+    justify-content: space-between;
 }
 
 .logoAndCity {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: baseline;
-    justify-content: space-between;
-    width: 25%;
+    gap: 2rem;
 }
 
 .logo {
     filter: none;
+    display: flex;
 }
 
-.logoAndCity .city {
-    width: 35%;
-    display: inline-flex;
+.city {
+    /* width: 35%; */
+    display: flex;
     align-items: baseline;
+    justify-content: space-around;
+    gap: 0.5rem;
 }
 
 .city img {
-    margin-right: 6%;
+    /* margin-right: 10%; */
 }
 
 .component .city, .logoMenu {
@@ -32,29 +34,30 @@
 }
 
 .logoMenu {
-    width: 70%;
-}
-
-.logoMenu span {
-    margin-left: 13%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    gap: 3rem;
 }
 
 .headButtons {
-    width: 25%;
-    display: inline-flex;
+    /* width: 25%; */
+    display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    gap: 4rem;
 }
-
-.headButtons .cart, .search, .login {
-    margin-left: 25%;
-}
-
 .centralBlock {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 17% auto 0 auto;
     width: 30%;
+}
+
+.centralBlock .logo {
+    display: block;
 }
 
 .centralBlock .logo, .centralBlock .dots, .centralBlock p {
@@ -83,5 +86,66 @@
 
 .arrow {
     display: flex;
-    margin: 13% auto 0 auto;
+    margin: 10% auto 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+    .logoAndCity {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+
+    .logo {
+        text-align: left;
+    }
+
+
+    .logoMenu {
+        gap: 0.7rem;
+    }
+
+    .logoMenu p {
+        font-size: 15px;
+    }
+
+    .headButtons {
+        gap: 0.7rem;
+    }
+
+    .centralBlock {
+        text-align: center;
+        width: 50%;
+    }
+    
+    .centralBlock .logo h1 {
+        margin-bottom: 7%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .logoMenu {
+        display: none;
+    }
+
+    .city {
+        font-size: 13px;
+    }
+
+    .logo {
+        font-size: 15px;
+    }
+
+    .centralBlock .logo h1 {
+        font-size: 25px;
+    }
+
+    .centralBlock p {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .arrow {
+        margin-top: 5%;
+    }
 }

@@ -3,24 +3,24 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100vw;
     height: 100vh;
 }
 
 .pickUpBlock {
     margin: 10% 0;
     padding: 5% 0 3% 5%;
-    width: 50%;
+    width: 66%;
     background: rgba(144, 143, 143, 0.2);
 }
 
 .pickUpBlock h2 {
-    width: 85%;
+    width: 75%;
 }
 
 .pickUpBlock p {
     color: #cacaca;
     margin-top: 4%;
+    width: 50%;
 }
 
 .btn {
@@ -32,4 +32,53 @@
     text-align: center;
     width: 31%;
     border-radius: 3px;
+}
+
+@media screen and (max-width: 700px) {
+    .pickUpBlock {
+        display: flex;
+        width: 80%;
+        margin: 35% auto;
+        padding: 5% 0;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .pickUpBlock h2 {
+        font-size: 30px;
+    }
+
+    .pickUpBlock p {
+        font-size: 15px;
+    }
+
+    .btn {
+        width: 40%;
+        font-size: 0.7em;
+        padding: 3% 0;
+    }
+
+    .pickUpBlock p, .pickUpBlock h2, .btn {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .pickUpBlock {
+        gap: 0.5rem;
+    }
+
+    .pickUpBlock h2 {
+        font-size: 20px;
+    }
+
+    .pickUpBlock p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .btn {
+        padding: 1% 2%;
+    }
 }

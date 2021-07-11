@@ -13,6 +13,7 @@
     width: 30%;
     margin-bottom: 7%;
     margin-right: 3%;
+    background: no-repeat;
 }
 
 .aboutBlock h4 {
@@ -32,7 +33,7 @@
 
 .aboutBlock p {
     font-size: 16px;
-    margin-top: 3%;
+    width: 80%;
 }
 
 .aboutBlock:nth-child(2) {
@@ -49,6 +50,7 @@
     height: 50%;
     padding-top: 30%;
     padding-left: 3%;
+    background: no-repeat;
 }
 
 .halfBlock:first-child {
@@ -59,4 +61,61 @@
 
 .halfBlock:last-child {
     background-image: url(../img/history.png);
+}
+
+@media screen and (max-width: 700px) {
+
+    .aboutBlocks {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+
+    .aboutBlock {
+        width: 69%;
+        margin-right: 0;
+        margin: 0 auto;
+    }
+
+    .aboutBlock p {
+        font-size: 14px;
+        width: 60%;
+    }
+    
+    .aboutBlock h4 {
+        font-size: 20px;
+    }
+
+    .aboutBlock:first-of-type {
+        padding: 15% 0 5% 1%;
+    }
+
+    .aboutBlock:nth-child(2), .halfBlock:first-child, .halfBlock:last-child {
+        padding: 20% 0 5% 1%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #aboutWine h2 {
+        font-size: 25px;
+    }
+
+    .aboutBlocks {
+        margin-top: 15%;
+    }
+
+    .aboutBlock p {
+        font-size: 10px;
+        line-height: 15px;
+        width: 100%;
+        margin-top: 3%;
+    }
+
+    .aboutBlock h4 {
+        font-size: 14px;
+    }
+
+    .aboutBlock span {
+        font-size: 8px;
+    }
 }
